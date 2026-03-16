@@ -1,0 +1,72 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner
+import java.util.Calendar
+/**
+ *
+ * @author 1491022
+ */
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        class Data {
+            
+            private int dia;
+            private int mes;
+            private int ano;
+            
+            public Data(int d, int m, int a) {
+                    dia = d;
+                    mes = m;
+                    ano = a;
+        }
+            
+            public int getdia(){
+                return dia;
+            }
+            
+            public int getmes(){
+                return mes;
+            }
+            
+            public int getano(){
+                return ano; 
+            }
+    }
+    class Pessoa {
+        private String nome;
+        private String sobrenome;
+        private double peso;
+        private double altura;
+        private Data data_nascimento;
+        
+        public Pessoa(String n, double p, double a, String s, Data dn) {
+            nome = n;
+            sobrenome = s;
+            peso = p;
+            altura = a;
+            Data = dn;
+        }
+        public int calcular idade(){
+            
+            Calendar hoje = Calendar.getInstance();
+            
+            int anoAtual = hoje.get(Calendar.YEAR);
+            int mesAtual = hoje.get(Calendar.MONTH) + 1;
+            int diaAtual = hoje.get(Calendar.DAY_OF_MONTH);
+            
+            int idade = anoAtual = hoje.get(Calendar.YEAR);
+            int mesAtual = hoje.get(Calendar.MONTH);
+            int diaAtual = hoje.get(Calendar.DAY_OF_MONTH);
+           
+             
+        }
+            
+        }
+    }
